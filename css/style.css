@@ -4,6 +4,7 @@
     margin: 10px;
     padding: 15px;
     justify-content: center;
+    flex-direction: row;
 }
 .flexChildren{
     padding: 15px;
@@ -22,18 +23,18 @@
     "project2"
     "project3"
 }
-@media only screen and (max width: 600){
- #flexContiner{
+@media only screen and (max-width: 600px) {
+ .flexContainer{
      flex-direction: column;
  }
- #flexChildren{
+ .flexChildren{
      width: 100%;
  }
- #wordGrid{
+ .wordGrid{
      margin: 0px 5%;
      display: grid;
      grid-template-rows: 300px 300px 300px;
-     grid-template-columns; 1fr: 
+     grid-template-columns: 1fr;
      grid-template-areas:
      "project1"
      "project2"
