@@ -1,0 +1,42 @@
+
+.flexContainer{
+    display: flex;
+    margin: 10px;
+    padding: 15px;
+    justify-content: center;
+}
+.flexChildren{
+    padding: 15px;
+    margin: 15px;
+    width:33%;
+    height: 200px;
+}
+
+.workGrid{
+    display: grid;
+    margin: 0px 5%;
+    padding: 15px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "project1"
+    "project2"
+    "project3"
+}
+@media only screen and (max width: 600){
+ #flexContiner{
+     flex-direction: column;
+ }
+ #flexChildren{
+     width: 100%;
+ }
+ #wordGrid{
+     margin: 0px 5%;
+     display: grid;
+     grid-template-rows: 300px 300px 300px;
+     grid-template-columns; 1fr: 
+     grid-template-areas:
+     "project1"
+     "project2"
+     "project3"
+ }
+}
